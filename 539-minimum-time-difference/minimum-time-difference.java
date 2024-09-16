@@ -5,8 +5,6 @@ class Solution {
         for (int i = 0; i < n; i++) {
             int a = Integer.parseInt(timepoints.get(i).substring(0, 2));
             int b = Integer.parseInt(timepoints.get(i).substring(3, 5)); 
-            // System.out.println(a);
-            // System.out.println(b);
             arr[i] = a*60+b;
         }
         Arrays.sort(arr);
