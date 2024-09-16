@@ -9,15 +9,6 @@ class Solution {
         }
         Arrays.sort(arr);
         int min = Integer.MAX_VALUE;
-        // for(int i = 0;i<n;i++){
-        //     for(int j = i+1;j<n;j++){
-        //         int dif = Math.min(arr[i]+1440-arr[j],arr[j]-arr[i]);
-        //         if(dif < min){
-        //             min = dif;
-        //         }
-        //     }
-            
-        // }
         for(int i = 1;i<n;i++){
             int res = arr[i]-arr[i-1];
             if(res < min) min = res;
