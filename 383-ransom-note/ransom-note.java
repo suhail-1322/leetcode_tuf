@@ -1,7 +1,6 @@
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
-        int n = ransomNote.length();
-
+ 
         HashMap<Character,Integer> map = new HashMap<>();
 
         for(int i = 0 ;i<magazine.length();i++){
@@ -15,10 +14,9 @@ class Solution {
             if(map.containsKey(c) && map.get(c) > 0){
                 int k = map.get(c)-1;
                 map.put(c,k);  
-                n--; 
             }
             else return false;
         }
-        return n==0;
+        return true;
     }
 }
