@@ -5,16 +5,16 @@ class Solution {
         int i=0;
         int j=0;
 
-        while(i<nums.length){
+        while(j<nums.length){
             if(nums[i]==nums[j]){
-                i++;
+                j++;
             }
             else{
-                nums[j+1] = nums[i];
+                nums[i+1] = nums[j];
                 i++;
                 j++;
             }
         }
-        return j+1;
+        return i+1;
     }
 }
