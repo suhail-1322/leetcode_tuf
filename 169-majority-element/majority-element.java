@@ -5,14 +5,16 @@ class Solution {
     }
 
     private int findCandidate(int[] arr) {
-        int count = 0, candidate = 0;
-        for (int num : arr) {
-            if (count == 0) {
-                candidate = num;
-            }
-            count += (num == candidate) ? 1 : -1;
-        }
+        int c = 0;
+        int candidate = 0;
 
+        for(int val : arr){
+            if(c == 0){
+                candidate = val;
+            }
+
+            c += (candidate == val) ? 1 : -1;
+        }
         return candidate;
     }
 }
