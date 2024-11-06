@@ -22,6 +22,6 @@ class Solution {
         if(arr[mid]<=key && key<=arr[e]){
             return binSearch(arr,key,mid+1,e);
         }
-        return binSearch(arr,key,s,mid-1);
+        else return binSearch(arr,key,s,mid-1);
     }
 }
