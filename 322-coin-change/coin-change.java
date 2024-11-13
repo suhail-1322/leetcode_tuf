@@ -7,7 +7,7 @@ class Solution {
         }
 
         // Initialize dp[0][j] to a large number for all j > 0, as no amount > 0 can be made with zero coins
-        for (int j = 0; j <= amount; j++) {
+        for (int j = 1; j <= amount; j++) {
             dp[0][j] = Integer.MAX_VALUE - 1;
         }
 
